@@ -8,12 +8,15 @@ from flask import Flask
 app = Flask(__name__)
 
 
+"""
+task 0
 @app.route('/', strict_slashes=False)
 def welcome():
-    """A function that execute code
+    A function that execute code
     for home page
-    """
+    
     return 'Hello HBNB!'
+"""
 
 
 @pp.route('/hbnb/', strict_slashes=False)
