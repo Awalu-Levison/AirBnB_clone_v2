@@ -9,7 +9,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@pp.route('/hbnb/', strict_slashes=False)
+@pp.route('/hbnb', strict_slashes=False)
 def hbnb():
     """
     A function that display “HBNB”
