@@ -21,7 +21,7 @@ def hbnb():
     """
     A function that display “HBNB”
     """
-    return 'HBNB'
+    return "HBNB"
 
 
 if __name__ == '__main__':
