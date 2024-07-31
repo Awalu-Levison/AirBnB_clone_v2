@@ -17,7 +17,7 @@ def welcome():
 
 
 @pp.route('/hbnb', strict_slashes=False)
-def display_hbnb():
+def hbnb():
     """
     A function that display “HBNB”
     """
