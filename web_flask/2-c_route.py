@@ -23,7 +23,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def program_with_c_parameters(text):
+def c_is_fun(text):
     """work with c parameters"""
     return 'C ' + text.replace('_', ' ')
 
