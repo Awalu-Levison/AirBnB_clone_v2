@@ -24,7 +24,7 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
-    """display “C ” followed by the value of the text variable"""
+    """display C with its variable value"""
     my_text = text.replace('_', ' ')
     return "C {}".format(my_text)
 
