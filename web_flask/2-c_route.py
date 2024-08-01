@@ -9,6 +9,7 @@ from flask import Flask
 app = Flask(__name__)
 app.url_map.
 
+
 @app.route('/', strict_slashes=False)
 def welcome():
     """return Hello HBNB!"""
@@ -19,6 +20,7 @@ def welcome():
 def hbnb():
     """display “HBNB”"""
     return 'HBNB'
+
 
 @app.route('/c/<text>')
 def program_with_c_parameters(text):
