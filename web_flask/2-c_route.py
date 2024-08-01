@@ -23,10 +23,10 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def cisfun(text):
-    """display C with its variable value"""
-    my_text = text.replace('_', ' ')
-    return "C {}".format(my_text)
+def display_c_param(text):
+    """display c parameters"""
+    replace_underscore = text.replace('_', ' ')
+    return "C {}".format(replace_underscore)
 
 
 if __name__ == '__main__':
