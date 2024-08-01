@@ -1,32 +1,28 @@
 #!/usr/bin/python3
 """
-The art of flask web application
+starts a Flask web application
 """
 
-
 from flask import Flask
-
 app = Flask(__name__)
-app.url_map.
 
 
 @app.route('/', strict_slashes=False)
-def welcome():
-    """return Hello HBNB!"""
+def index():
+    """returns Hello HBNB!"""
     return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-    """display “HBNB”"""
+    """returns HBNB"""
     return 'HBNB'
 
 
-@app.route('/C/<text>', strict_slashes=False)
-def display_c_param(text):
-    """display c parameters"""
-    replace_underscore = text.replace('_', ' ')
-    return "C {}".format(replace_underscore)
+@app.route('/c/<text>', strict_slashes=False)
+def cisfun(text):
+    """display “C ” followed by the value of the text variable"""
+    return 'C ' + text.replace('_', ' ')
 
 
 if __name__ == '__main__':
